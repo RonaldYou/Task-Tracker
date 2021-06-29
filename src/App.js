@@ -3,10 +3,10 @@ import Body from './components/Body'
 
 const App = ()=> {
   return (
-    <div className='container'>
-      <Header />
-      <Body />
-    </div>
+      <div className='container'>
+        <Header/>
+        <Body/>
+      </div>
   );
 }
 
