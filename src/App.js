@@ -11,7 +11,9 @@ const App = ()=> {
         <Button/>
         {/* <Body/> */}
       </div>
-      <Tasks/>
+      <div className='container'>
+        <Tasks/>
+      </div>
     </div>
   );
 }
