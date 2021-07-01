@@ -5,7 +5,7 @@ import Tasks from './components/Tasks'
 
 const App = ()=> {
   return (
-    <div className='container'>
+    <div className='container2'>
       <div className='container'>
         <Header/>
         <Button/>
