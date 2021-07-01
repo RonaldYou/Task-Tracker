@@ -5,12 +5,14 @@ import Tasks from './components/Tasks'
 
 const App = ()=> {
   return (
+    <div className='container'>
       <div className='container'>
         <Header/>
         <Button/>
         {/* <Body/> */}
-        {/* <Tasks/> */}
       </div>
+      <Tasks/>
+    </div>
   );
 }
 
