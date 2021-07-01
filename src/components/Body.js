@@ -1,7 +1,7 @@
 const Body = () => {
     return (
         <body>
-             <form className='form-control'>
+             <form>
                 <label>
                      Name:
                     <input type="text" name="name"/>
