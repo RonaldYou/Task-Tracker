@@ -1,12 +1,21 @@
 const Button = () => {
     return (
         <>
-            <button onClick={shoot} className='btn'>Add</button>
+            <button onClick={() => { alert("Cringe"); console.log("didsmth")}} className='btn'>Add</button>
         </>
     )
 }
-function shoot() {
-    alert("Great Shot!");
-    console.log("didsmth")
-}
+// function Custom(){
+//     var val = One();
+//     alert("Great Shot!")
+
+//     val = Two();
+//     console.log("didsmth");
+// }
+
+
+// function shoot() {
+//     alert("Great Shot!");
+    
+// }
 export default Button
