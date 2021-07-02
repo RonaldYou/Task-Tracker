@@ -27,19 +27,16 @@ body {
 }
 
 .header {
-  /* align-items: center; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-  margin-bottom: 5px;
+  display: inline-block;
 }
 
 .btn {
-  /* display: inline-block; */
   background: rgb(7, 161, 97);
   color: #fff;
   border: none;
   padding: 10px 20px;
-  /* margin: 5px; */
+  margin-left: 80px;
+  margin-bottom: 5px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 15px;
