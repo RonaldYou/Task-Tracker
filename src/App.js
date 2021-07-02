@@ -9,10 +9,15 @@ const App = ()=> {
       <div className='container'>
         <Header/>
         <Button/>
-        {/* <Body/> */}
+        <div className='form-control'>
+         <Body/>
+        </div>
       </div>
       <div className='container'>
-        <Tasks/>
+        <div className='task'>
+          <Tasks/>
+        </div>
+        
       </div>
     </div>
   );

@@ -14,10 +14,10 @@ const task = [
 ]
 const Tasks = () => {
     return (
-        <>
+        <div className='task'>
           {task.map((task) => 
             (<h3>{task.text}</h3>))}  
-        </>
+        </div>
     )
 }
 

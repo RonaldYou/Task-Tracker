@@ -1,14 +1,16 @@
 const Body = () => {
     return (
-        <body>
-             <form>
-                <label>
-                     Name:
-                    <input type="text" name="name"/>
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
-        </body>
+        <div className='form-control'>
+         <body>
+              <form>
+                 <label>
+                      Name: 
+                     <input type="text" name="name"/>
+                 </label>
+                 <input type="submit" value="Submit" />
+             </form>
+         </body>
+        </div>
     )
 }
 

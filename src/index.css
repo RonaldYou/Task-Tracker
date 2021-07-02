@@ -45,3 +45,14 @@ body {
   font-size: 15px;
   font-family: inherit;
 }
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-control {
+  margin: 20px 0;
+}
