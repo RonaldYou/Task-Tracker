@@ -4,12 +4,12 @@ const Body = () => {
          <body>
               <form>
                  <label>
-                      Name: <br></br>
-                     <input type="text" name="name"/><br></br>
+                      Task Name: <br></br>
+                     <input type="text" name="name" placeholder="Task Name"/><br></br>
                  </label>
                  <label>
                       Date: <br></br>
-                     <input type="text" name="MM/DD/YYYY"/> <br></br>
+                     <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
                  </label>
                  <input type="submit" value="Submit" />
              </form>
