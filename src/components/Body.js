@@ -24,8 +24,6 @@ import React from "react"
 class Body extends React.Component {
   state = {
     task: [{name:"", date:""}],
-    owner: "",
-    description: ""
   }
 handleChange = (e) => {
     if (["name", "date"].includes(e.target.className) ) {
@@ -43,10 +41,10 @@ addCat = (e) => {
   }
 handleSubmit = (e) => { e.preventDefault() }
 render() {
-    let {owner, description, task} = this.state
+    let {task} = this.state
     return (
       <form onSubmit={this.handleSubmit} onChange={this.handleChange} >
-        <button onClick={this.addCat}>Add New Task</button>
+        <button onClick={this.addCat} className='btn'>Add New Task</button>
         {
           task.map((val, idx)=> {
             let taskId = `task-${idx}`, dateId = `date-${idx}`
