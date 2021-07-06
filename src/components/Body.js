@@ -46,11 +46,11 @@ render() {
     let {owner, description, task} = this.state
     return (
       <form onSubmit={this.handleSubmit} onChange={this.handleChange} >
-        <label htmlFor="name">Owner</label> 
+        {/* <label htmlFor="name">Owner</label> 
         <input type="text" name="owner" id="owner" value={owner} />
         <label htmlFor="description">Description</label> 
-        <input type="text" name="description" id="description" value={description} />
-        <button onClick={this.addCat}>Add new cat</button>
+        <input type="text" name="description" id="description" value={description} /> */}
+        <button onClick={this.addCat}>Add New Task</button>
         {
           task.map((val, idx)=> {
             let catId = `cat-${idx}`, dateId = `date-${idx}`
