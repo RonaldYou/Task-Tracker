@@ -11,7 +11,7 @@ const Body = () => {
                       Date: <br></br>
                      <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
                  </label>
-                 <input type="submit" value="Submit" />
+                 <input className="btn" type="submit" value="Add" />
              </form>
          </body>
         </div>
