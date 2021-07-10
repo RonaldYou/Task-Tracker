@@ -1,24 +1,60 @@
-const Body = () => {
-    return (
-        <div className='form-control'>
-         <body>
-              <form>
-                 <label>
-                      Task Name: <br></br>
-                     <input type="text" name="name" placeholder="Task Name"/><br></br>
-                 </label>
-                 <label>
-                      Date: <br></br>
-                     <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
-                 </label>
-                 <input className="btn" type="submit" value="Add" />
-             </form>
-         </body>
-        </div>
-    )
-}
+// const Body = () => {
+//     return (
+//         <div className='form-control'>
+//          <body>
+//               <form>
+//                  <label>
+//                       Task Name: <br></br>
+//                      <input type="text" name="name" placeholder="Task Name"/><br></br>
+//                  </label>
+//                  <label>
+//                       Date: <br></br>
+//                      <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
+//                  </label>
+//                  <input className="btn" type="submit" value="Add" />
+//              </form>
+//          </body>
+//         </div>
+//     )
+// }
 
-export default Body
+// export default Body
+
+class Body extends React.Component {
+
+    constructor(props){
+      super(props);
+      this.state = { username: '' };
+    }
+   
+    handleChange = event => {
+      this.setState({ username: event.target.value });
+    };
+   
+    render() {
+      return (
+        <React.Fragment>
+          <form>
+            <label htmlFor="username">username</label>
+            <input
+              type="text"
+              name="username"
+              value={this.state.username}
+              onChange={this.handleChange}
+            />
+          </form>
+   
+          <h3>Your username is: {this.state.username}</h3>
+        </React.Fragment>
+      );
+    }
+   }
+
+
+
+
+
+
 
 // import React from "react"
 // class Body extends React.Component {
