@@ -25,11 +25,11 @@ class Body extends React.Component {
 
     constructor(props){
       super(props);
-      this.state = { TaskName: '' , Date: ''};
+      this.state = { TaskName: '' ,Date: '' };
     }
    
     handleChange = event => {
-      this.setState({ TaskName: event.target.value1 }, {Date: event.target.value2});
+      this.setState({ TaskName: event.target.value }, {Date: event.target.value});
     };
    
     render() {
@@ -38,16 +38,17 @@ class Body extends React.Component {
           <form>
                 <label>
                     Task Name: <br></br>
-                     <input type="text" name="name" value1={this.state.TaskNAme} onChange={this.handleChange} placeholder="Task Name"/><br></br>
+                     <input type="text" name="TaskName" value={this.state.TaskName} onChange={this.handleChange} placeholder="Task Name"/><br></br>
                  </label>
                  <label>
                       Date: <br></br>
-                     <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
+                     <input type="text" name="Date" value={this.state.Date} onChange={this.handleChange} placeholder="MM/DD/YYYY"/> <br></br>
                  </label>
                  <input className="btn" type="submit" value="Add" />
              </form>
    
-          <h3>Your username is: {this.state.username}</h3>
+          <h3>Your Task is: {this.state.TaskName}</h3>
+          <h3>Due Date is: {this.state.Date}</h3>
         </React.Fragment>
       );
     }
