@@ -19,6 +19,7 @@
 // }
 
 // export default Body
+import React from "react";
 
 class Body extends React.Component {
 
@@ -35,14 +36,16 @@ class Body extends React.Component {
       return (
         <React.Fragment>
           <form>
-            <label htmlFor="username">username</label>
-            <input
-              type="text"
-              name="username"
-              value={this.state.username}
-              onChange={this.handleChange}
-            />
-          </form>
+                <label>
+                    Task Name: <br></br>
+                     <input type="text" name="name" value={this.state.username} onChange={this.handleChange} placeholder="Task Name"/><br></br>
+                 </label>
+                 <label>
+                      Date: <br></br>
+                     <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
+                 </label>
+                 <input className="btn" type="submit" value="Add" />
+             </form>
    
           <h3>Your username is: {this.state.username}</h3>
         </React.Fragment>
@@ -50,8 +53,7 @@ class Body extends React.Component {
     }
    }
 
-
-
+export default Body
 
 
 
