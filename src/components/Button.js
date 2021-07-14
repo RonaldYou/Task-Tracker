@@ -1,10 +1,9 @@
 import React from 'react';
-import { useState } from 'react'
-const Button = (props) => {
+const Button = () => {
     return (
-        <>
-            <button onClick={props.addTask} className='btn'>Add</button>
-        </>
+        <div>
+            <button className='btn'>Next</button>
+        </div>
     )
 }
 //() => { alert("Cringe"); console.log("didsmth");}

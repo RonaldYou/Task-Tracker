@@ -9,7 +9,7 @@ const App = ()=> {
     <div className='container2'>
       <div className='container'>
         <Header/>
-        {/* <Button/> */}
+        <Button/>
         <div className='form-control'>
          <Body/>
         </div>
