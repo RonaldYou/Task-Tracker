@@ -10,6 +10,12 @@ const task = [
         text: 'Metting at School',
         day: 'Feb 6th at 1:30pm',
         remindewr: true,
+    },
+    {
+        id: 3,
+        text: 'Learn Bootstrap',
+        day: 'Feb 6th at 1:30pm',
+        remindewr: true,
     }
 ]
 const Tasks = () => {
