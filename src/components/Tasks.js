@@ -7,7 +7,7 @@ const task = [
     },
     {
         id: 2,
-        text: 'Metting at School',
+        text: 'Meeting at School',
         day: 'Feb 6th at 1:30pm',
         remindewr: true,
     },
