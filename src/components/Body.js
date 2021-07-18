@@ -1,22 +1,22 @@
-// // const Body = () => {
-// //     return (
-// //         <div className='form-control'>
-// //          <body>
-// //               <form>
-// //                  <label>
-// //                       Task Name: <br></br>
-// //                      <input type="text" name="name" placeholder="Task Name"/><br></br>
-// //                  </label>
-// //                  <label>
-// //                       Date: <br></br>
-// //                      <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
-// //                  </label>
-// //                  <input className="btn" type="submit" value="Add" />
-// //              </form>
-// //          </body>
-// //         </div>
-// //     )
-// // }
+const Body = () => {
+    return (
+        <div className='form-control'>
+         <body>
+              <form>
+                 <label>
+                      Task Name: <br></br>
+                     <input type="text" name="name" placeholder="Task Name"/><br></br>
+                 </label>
+                 <label>
+                      Date: <br></br>
+                     <input type="text" name="date" placeholder="MM/DD/YYYY"/> <br></br>
+                 </label>
+                 <input className="btn" type="submit" value="Add" />
+             </form>
+         </body>
+        </div>
+    )
+}
 
 // // export default Body
 // import React from "react";
